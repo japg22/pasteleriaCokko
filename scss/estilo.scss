@@ -1,0 +1,313 @@
+#stickyIndex{
+	position: sticky;
+	top: 0px; 
+	bottom: 0px;
+}
+
+#buscador{
+	color:rgb(153, 102, 255);
+	font-family: 'Russo One', sans-serif;
+	font-size: 30px;
+	display: inline-block;
+	margin:0px 0px 50px 500px;
+	background-color: rgb(255, 204, 255);
+}
+.focusindex{
+	height: 40px;
+	width: 200px;
+	transition: height 2s, width 1s;
+	font-size: 30px;
+
+}
+.focusindex:focus{
+	height: 70px;
+
+	font-size: 40px;
+}
+
+.Email{
+	height: 30px;
+	width:150px;
+	transition: height 2s, width 1s;
+	font-size:20px;
+}
+
+.Email:focus{
+	height:60px;
+	width: 200px;
+	font-size:30px;
+}
+
+#tablaNav{
+	display: inline-block;
+	background-color: rgb(255, 204, 255);
+	text-decoration: none;
+	margin-left: 470px;
+
+}
+.segundaP{
+	background-color: rgb(255, 204, 0);
+}
+#COSASRICAS{
+	color:rgb(230, 0, 0);
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+}
+
+#galeriaDeFotos{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#TENTATE{
+	color:rgb(230, 0, 0);
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+#correo{
+	color:rgb(255, 128, 0);
+
+	font-family: 'Montserrat', sans-serif;
+
+	margin-left: 50px;
+}
+
+.e-Mail{
+
+	color:black;
+}
+
+.lista{
+	color:red;
+	font-family: 'Russo One', sans-serif;
+}
+
+.Dirección{
+	color:black;
+}
+
+.Email{
+	color:black;
+}
+.Teléfono{
+	color:black;
+}
+
+
+.bg-light{
+	background-color: red;
+}
+
+@media only screen and (min-width: 768px){
+
+
+	.bg-light{
+		background-color: blue;
+	}
+}
+
+
+/*--TIENDA-----*/
+
+.grid{
+    
+	display: grid;
+	grid-template-rows:100px 100px 100px 100px 100px;
+	grid-template-columns:auto;
+	grid-template-areas:
+      "nuestrosproductos nuestrosproductos nuestrosproductos nuestrosproductos nuestrosproductos"
+      "navTienda navTienda navTienda navTienda navTienda"
+      "subTienda subTienda subTienda subTienda subTienda"
+      "imgTienda imgTienda imgTienda imgTienda imgTienda"
+      "lista lista lista lista lista";
+}
+
+.nuestrosProductos{
+	grid-area:nuestrosproductos;
+	color:rgb(230, 0, 0);
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+}
+.nuestrosProductos--título{
+
+ font-size: 50px;
+
+}
+.navTienda{
+	grid-area:navTienda;
+	margin-top: 50px;
+	margin-left: 430px;
+
+}
+.subTienda{
+	grid-area:subTienda;
+	color:rgb(255, 128, 0);
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.subTienda--Título{
+   font-size: 25px;
+}
+
+.imgTienda{
+	grid-area:imgTienda;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.hijoUno {
+    padding: 10px;
+    flex-grow: 10px;
+}
+
+.esquema{
+	grid-area:lista;
+	color:rgb(219, 77, 255);
+	font-family: 'Russo One', sans-serif;
+	margin-top: 600px;
+}
+
+b{
+	color:rgb(255, 0, 102);
+}
+
+@media only screen and (max-width: 768px){
+	.grid{
+		grid-template-rows: 100px;
+        grid-template-areas:
+      "nuestrosproductos"
+      "navTienda"
+      "subTienda"
+      "imgTienda"
+      "lista";
+    }
+    .navTienda{margin-left: 110px;}
+
+    #img{
+        width: 150px;
+        height: 150px;
+	}
+
+	.border{
+		background-color: blue;
+	}
+	.esquema{
+		margin-top: 50px;
+	}
+}
+
+/*contacto*/
+
+
+
+#CONTACTO{
+	color:rgb(255, 153, 0);
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+
+}
+
+#navContacto{
+	margin-left: 450px;
+}
+
+.estilop{
+	color:red;
+    font-family: 'Russo One', sans-serif;
+}
+
+input.focus{
+	width: 150px; height: 30px;
+	transition: all 2s;
+}
+input.focus:focus{
+	width: 250px;
+	height: 50px;
+	font-size: 30px;
+}
+
+
+#navEventos{
+	margin-left: 450px;
+}
+
+.EVENTOS{
+	color:rgb(255, 153, 0);
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	font-size: 40px;
+}
+
+.servicios{
+	color:rgb(179, 0, 89);
+	font-family: 'Russo One', sans-serif;
+}
+
+.servicios--nuevo{
+	@extend.servicios;
+	text-align:center;
+	font-size:25px;
+}
+
+.container{
+	background-color: black;
+
+}
+
+.locales{
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+
+}
+
+.localesAlCliente{
+    @extend.locales;
+	color:red;
+	font-size:30px;
+}
+
+.localesTake{
+    @extend.locales;
+	color:orangered;
+	font-size:25px;
+
+}
+
+$anchoMap:1500px;
+$altoMap:auto;
+
+.map{
+
+	margin-left: 300px;
+}
+
+.mapLocal_1{
+	width:$anchoMap/2;
+    height:$altoMap;
+}
+.mapLocal_2{
+	width:$anchoMap/2;
+	height:$altoMap;
+}
+
+
+.estiloH2{
+	color:orangered;
+}
+
+.subtitulo{
+	color:rgb(255, 153, 0);
+}
+#navLocales{
+	margin-left: 450px;
+}
